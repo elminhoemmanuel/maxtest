@@ -16,11 +16,11 @@
         <!-- google fonts  -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Rubik:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 
+        <!-- font awesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
         <!-- bootstrap css -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-        <!-- font awesome css -->
-
 
         <!-- custom css -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -33,43 +33,53 @@
         <!-- form area -->
         <main class="container-fluid">
             <div class="page-holder row">
-                <div class="side col-lg-4 col-md-4">
+                <div class="left side col-lg-4 col-md-4">
                     <h2 class="font-weight-bold">Welcome to Star Wars the Clone Wars</h2>
 
                 </div>
 
-                <div class="main col-lg-8 col-md-8">
-                    <img src="assets/images/astroflags.svg" alt="flags image" class="flag">
+                <div class="right col-lg-8 col-md-8">
+                    <div class="main">
+                        <img src="assets/images/astroflags.svg" alt="flags image" class="flag">
+    
+                        <div class="form-holder">
+    
+                            <h4 class="form-header ">Sign in to continue to <br>your account.</h4>
+            
+                            <form id="login-form" action="" class="login-form" >
+    
+                                <!-- email field -->
+                                <div class="form-group">
+                                    <label for="email" class="font-weight-bold">Email address</label>
+                                    <input oninput="validateFormItems()" onkeypress="validateFormItems()" onfocus="validateFormItems()" type="email" class="form-control email-input" id="email" aria-describedby="email" placeholder="Email address" required>
+                                   
+                                </div>
+    
+                                <!-- password field -->
+                                <div class="form-group">
+                                    <label for="password" class="font-weight-bold">Password</label>
+                                    <input onblur="hidePwordWarning()" onfocus="showPwordWarning()" oninput="validateFormItems()" onkeypress="validateFormItems()" onfocus="validateFormItems()"  type="password" class="form-control" id="password" placeholder="Enter strong password" required>
+                                    <small id="pwordHelp" class="">Password should be more than 8 characters and contain a letter and number.</small>
+                                </div>
+    
+                                <!-- login btn -->
+                                <a type="submit" role="button" class="btn btn-dark login-btn disabled" >Sign&nbsp;in</a>
+            
+                            </form>
+            
+                        </div>
 
-                    <div class="form-holder">
+                        <div class="footer-flex">
+                                <div class="pr"><p>All&nbsp;rights&nbsp;reserved&nbsp;©&nbsp;2020&nbsp;STAR&nbsp;WARS</p></div>
+                                <div class="pr-2"><p><a href="">Privacy&nbsp;|&nbsp;Terms</a></p></div>
+                                <div><p><a href="">English&nbsp;<i class="fas fa-caret-down"></i></a></p></div>
 
-                        <h4 class="form-header ">Sign in to continue to <br>your account.</h4>
-        
-                        <form id="login-form" action="" class="login-form" >
+                        </div>
 
-                            <!-- email field -->
-                            <div class="form-group">
-                                <label for="email" class="font-weight-bold">Email address</label>
-                                <input oninput="validateFormItems()" onkeypress="validateFormItems()" onfocus="validateFormItems()" type="email" class="form-control email-input" id="email" aria-describedby="email" placeholder="Email address" required>
-                               
-                            </div>
-
-                            <!-- password field -->
-                            <div class="form-group">
-                                <label for="password" class="font-weight-bold">Password</label>
-                                <input onblur="hidePwordWarning()" onfocus="showPwordWarning()" oninput="validateFormItems()" onkeypress="validateFormItems()" onfocus="validateFormItems()"  type="password" class="form-control" id="password" placeholder="Enter strong password" required>
-                                <small id="pwordHelp" class="">Password should be more than 8 characters and contain a letter and number.</small>
-                            </div>
-
-                            <!-- login btn -->
-                            <a type="submit" role="button" class="btn btn-dark login-btn disabled" >Sign&nbsp;in</a>
-        
-                        </form>
-        
+    
                     </div>
-
+    
                 </div>
-
             </div>
         </main>
 
@@ -81,9 +91,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
         <!-- FORM VALIDATION SCRIPT -->
-        <!-- <script src="assets/js/parsely.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+
+        <!-- Font awesome script -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
 
         <!-- custom js script -->
         <script src="assets/js/index.js" ></script>
