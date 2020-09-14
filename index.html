@@ -51,14 +51,14 @@
                             <div class="form-group">
                                 <label for="email" class="font-weight-bold">Email address</label>
                                 <input oninput="validateFormItems()" onkeypress="validateFormItems()" onfocus="validateFormItems()" type="email" class="form-control email-input" id="email" aria-describedby="email" placeholder="Email address" required>
-                                <small id="emailHelp" class="form-text text-muted">Please provide a valid email address.</small>
+                               
                             </div>
 
                             <!-- password field -->
                             <div class="form-group">
                                 <label for="password" class="font-weight-bold">Password</label>
                                 <input onblur="hidePwordWarning()" onfocus="showPwordWarning()" oninput="validateFormItems()" onkeypress="validateFormItems()" onfocus="validateFormItems()"  type="password" class="form-control" id="password" placeholder="Enter strong password" required>
-                                <small id="pwordHelp" class="form-text text-muted">Password should be more than 8 characters and contain a letter and number.</small>
+                                <small id="pwordHelp" class="">Password should be more than 8 characters and contain a letter and number.</small>
                             </div>
 
                             <!-- login btn -->

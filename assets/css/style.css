@@ -66,9 +66,9 @@ body {
 .main form .login-btn:hover {
   background-color: #050000 !important;
 }
-.main form #pwordHelp, .main form #emailHelp {
+.main form #pwordHelp {
   display: none;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
