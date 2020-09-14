@@ -6,6 +6,7 @@ const pwordHelp = document.querySelector("#pwordHelp");
 
 //listeners
 
+
 //functions
 function validateFormItems()
 {
@@ -14,11 +15,13 @@ const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
 if(inputText.value.match(mailFormat)&&pwordText.value.match(passwordFormat))
 {
 loginBtn.classList.remove("disabled");
+loginBtn.setAttribute("href","https://aoestarwars.netlify.app/dashboard.html");
 return true;
 }
 else
 {
 loginBtn.classList.add("disabled");
+loginBtn.removeAttribute("href","https://aoestarwars.netlify.app/dashboard.html");
 return false;
 }
 }
