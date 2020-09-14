@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.side {
+  background-color: #fff6d3;
+  padding: 10% 4% 0 2%;
+  height: 100vh;
+  background-image: url(../images/rocket.svg), url(../images/black-rect.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom 22% right 40%, bottom -0.5% right 0;
+}
+
+.main {
+  padding: 10% 6% 0 8%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden !important;
+}
+.main .flag {
+  width: 70% !important;
+  position: absolute;
+  top: 1%;
+  left: 45%;
+}
+.main form {
+  margin-top: 6%;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 50%;
+}
+.main form .top-input {
+  margin-bottom: 7%;
+}
+.main form input {
+  border: 1px solid #8D99AE !important;
+  padding: 3%;
+}
+.main form input::-webkit-input-placeholder {
+  /* Edge */
+  font-size: 0.7rem !important;
+}
+.main form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 0.7rem !important;
+}
+.main form input::-moz-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 0.7rem !important;
+}
+.main form input::placeholder {
+  font-size: 0.7rem !important;
+}
+.main form .login-btn {
+  margin-top: 7%;
+  width: 100%;
+  background-color: #1F1F21;
+}
+.main form .login-btn:hover {
+  background-color: #050000 !important;
+}
+.main form #pwordHelp, .main form #emailHelp {
+  display: none;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .side {
+    display: none;
+  }
+
+  .main {
+    padding: 30% 4% 0 10%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

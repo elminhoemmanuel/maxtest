@@ -1,0 +1,20 @@
+// used fonts
+$sign-header:'Poppins', sans-serif;
+$sign-form:'Source Sans Pro', sans-serif;
+$dashboard-font:'Rubik', sans-serif;
+
+// placeholder mixin for sign in form
+@mixin placeholder($size){
+    &::-webkit-input-placeholder { /* Edge */
+        font-size: $size !important;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: $size !important;
+      }
+      &::-moz-placeholder { /* Internet Explorer 10-11 */
+        font-size: $size !important;
+      }
+      &::placeholder{
+        font-size: $size !important;
+    }
+}
