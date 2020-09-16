@@ -2,7 +2,14 @@
 $sign-header:'Poppins', sans-serif;
 $sign-form:'Source Sans Pro', sans-serif;
 $dashboard-font:'Rubik', sans-serif;
+$bshadow-val:10px 10px  rgb(201, 200, 200);
+$bshadow-val-single:0px 0px 46px #0000000F;
+$side-bg:#FFFFFF 0% 0% no-repeat padding-box;
+$main-bg:#F5F6FA no-repeat padding-box;
+$border:0.4000000059604645px solid #DBE3EE;
+$null:none;
 
+// mixins
 // placeholder mixin for sign in form
 @mixin placeholder($size){
     &::-webkit-input-placeholder { /* Edge */
@@ -17,4 +24,33 @@ $dashboard-font:'Rubik', sans-serif;
       &::placeholder{
         font-size: $size !important;
     }
+}
+
+// box-shadow mixin
+@mixin bshadow($color){
+    box-shadow: $color;
+    -moz-box-shadow: $color;
+    -webkit-box-shadow:$color;
+    -o-box-shadow:$color ;
+}
+
+@mixin appearance-clear($val){
+  -webkit-appearance:$val;
+  -moz-appearance:$val;
+  appearance:$val;
+}
+
+// utility classes
+@mixin utilities-top(){
+  .pdt{
+    padding-top:1%;
+  }
+
+  .pdb{
+    padding-bottom:0.3% !important;
+  }
+
+  .pdr{
+    padding-right:2% !important;
+  }
 }

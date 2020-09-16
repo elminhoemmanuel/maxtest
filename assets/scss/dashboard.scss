@@ -1,0 +1,211 @@
+@use 'config' as c;
+@use 'dashboard-nav' as dn;
+@use 'dashboardresponsive' as dr;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: c.$dashboard-font;
+    font-size: 1rem;
+    position: relative;
+}
+
+// main body section
+
+.main-box{
+    background: c.$main-bg;
+    padding: 0 !important;
+
+    .top-nav,.bottom-nav{
+        background-color: #FFFFFF;
+
+        i{
+            color: #A3ABB7;
+            font-size: 1.3rem;
+        }
+
+        .bell{
+            padding-right: 20%;
+        }
+    }
+
+    .top-nav{
+
+        .btn-holder{
+            padding-top: 3%;
+        }
+
+        .text-holder{
+            padding-top: 11%;
+        }
+
+        button{
+            background: none;
+            border: none;
+            color: #FFDA00 !important; 
+            font-size: 1.8rem;
+            
+        }
+    }
+
+    .bottom-nav{
+        
+        .selectdiv {
+            position: relative;
+            /*Don't really need this just for demo styling*/
+        } 
+          /*To remove button from IE11, thank you Matt */
+        select::-ms-expand {
+               display: none;
+        }
+          
+        .selectdiv:after {
+            content: '\25BC';
+            font-size: 0.7rem;
+            color: #333;
+            right: 11px;
+            /*Adjust for position however you want*/
+            top: 25%;
+            padding: 0 0 2px;
+            /*left line */
+            position: absolute;
+            pointer-events: none;
+            cursor: pointer;
+        }
+          
+        .selectdiv select {
+            @include c.appearance-clear(c.$null);
+            /* Add some styling */
+            display: block;
+            width: 100%;
+            float: right;
+            margin: 5px 0px;
+            padding:5% 18% 5% 5%;
+            font-size: 0.8rem;
+            line-height: 1.75;
+            color: #000000;
+            background-color: #ffffff;
+            background-image: none;
+            border: 1px solid #EFEFEF;
+            border-radius: 5px;
+            -ms-word-break: normal;
+            word-break: normal;
+            cursor: pointer;
+            outline: none;
+            
+
+            &:focus{
+                border: 1px solid #FFDA00;
+            }
+        }
+
+        
+    }
+
+    .select-first{
+        margin-right: 1%;
+    }
+
+    .user-logo{
+        width: 80%;
+    }
+
+    .main-holder{
+        padding: 2%;
+    }
+
+    .boxes-holder{
+        background-color: transparent;
+        margin-bottom: 5%;
+
+        .single-box{
+            background-color: white;
+            border-radius: 10px;
+            padding: 2%;
+            width: 190px;
+            margin-right: 2%;
+            margin-bottom: 4%;
+            @include c.bshadow(c.$bshadow-val-single);
+
+            .up{
+                margin-bottom: 30%;
+            }
+
+            .up-header-holder{
+                padding-top: 7%;
+            }
+
+            .number{
+                margin-bottom: 6%;
+            }
+
+            .small-num{
+                font-size: 0.7rem;
+            }
+
+            .inside-num{
+                margin-top: 20% !important;
+                
+            }
+
+            .green{
+                color: #5FB960;
+            }
+        }
+    }
+
+    .table-holder{
+        padding: 4%;
+        background-color: white;
+        border-radius: 10px;
+        @include c.bshadow(c.$bshadow-val-single);
+        overflow-x: hidden;
+
+        .table-heading{
+            margin-bottom: 2%;
+        }
+
+        .table-flex-holder{
+
+            p{
+                font-size: 0.7rem;
+            }
+
+            img{
+                width: 70%;
+            }
+            
+            .col-title{
+                color: #A3ABB7;
+                margin-bottom: 5%;
+            }
+
+            .text{
+                padding-top: 13%;
+                
+            }
+
+            .table-item{
+                width: 120px;
+                margin-bottom: 7%;
+            }
+            .table-item-first{
+                width: 210px;
+                margin-bottom: 7%;
+            }
+
+            .others{
+                padding-top: 10%;
+            }
+        }
+    }
+
+
+}
+
+@include dn.utilities();
+@include c.utilities-top();

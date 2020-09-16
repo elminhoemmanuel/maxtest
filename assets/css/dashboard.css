@@ -1,0 +1,299 @@
+@charset "UTF-8";
+.side-box, #side-box-small {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 0.400000006px solid #DBE3EE;
+  opacity: 1;
+  box-shadow: 10px 10px #c9c8c8;
+  -moz-box-shadow: 10px 10px #c9c8c8;
+  -webkit-box-shadow: 10px 10px #c9c8c8;
+  -o-box-shadow: 10px 10px #c9c8c8;
+}
+.side-box a, #side-box-small a {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.logo-lg {
+  width: 70%;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 769px) and (min-width: 768px) {
+  .row {
+    overflow-x: hidden !important;
+    background: #F5F6FA;
+  }
+
+  .top-holder {
+    width: 120% !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  .side-box {
+    display: none !important;
+  }
+
+  .hide-nav {
+    display: none !important;
+  }
+
+  #side-box-small {
+    z-index: 30;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    box-shadow: none !important;
+    transition: all 0.7s ease;
+  }
+  #side-box-small .side-logo {
+    margin-right: 20%;
+  }
+  #side-box-small .btn-holder {
+    margin-right: 3%;
+  }
+  #side-box-small button {
+    background: none;
+    border: none;
+    color: #FFDA00 !important;
+    font-size: 1.3rem;
+  }
+
+  .logo-lg {
+    width: 50% !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .top-nav button {
+    display: none !important;
+  }
+
+  #side-box-small {
+    display: none !important;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  position: relative;
+}
+
+.main-box {
+  background: #F5F6FA no-repeat padding-box;
+  padding: 0 !important;
+}
+.main-box .top-nav, .main-box .bottom-nav {
+  background-color: #FFFFFF;
+}
+.main-box .top-nav i, .main-box .bottom-nav i {
+  color: #A3ABB7;
+  font-size: 1.3rem;
+}
+.main-box .top-nav .bell, .main-box .bottom-nav .bell {
+  padding-right: 20%;
+}
+.main-box .top-nav .btn-holder {
+  padding-top: 3%;
+}
+.main-box .top-nav .text-holder {
+  padding-top: 11%;
+}
+.main-box .top-nav button {
+  background: none;
+  border: none;
+  color: #FFDA00 !important;
+  font-size: 1.8rem;
+}
+.main-box .bottom-nav {
+  /*To remove button from IE11, thank you Matt */
+}
+.main-box .bottom-nav .selectdiv {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+}
+.main-box .bottom-nav select::-ms-expand {
+  display: none;
+}
+.main-box .bottom-nav .selectdiv:after {
+  content: "▼";
+  font-size: 0.7rem;
+  color: #333;
+  right: 11px;
+  /*Adjust for position however you want*/
+  top: 25%;
+  padding: 0 0 2px;
+  /*left line */
+  position: absolute;
+  pointer-events: none;
+  cursor: pointer;
+}
+.main-box .bottom-nav .selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  display: block;
+  width: 100%;
+  float: right;
+  margin: 5px 0px;
+  padding: 5% 18% 5% 5%;
+  font-size: 0.8rem;
+  line-height: 1.75;
+  color: #000000;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  -ms-word-break: normal;
+  word-break: normal;
+  cursor: pointer;
+  outline: none;
+}
+.main-box .bottom-nav .selectdiv select:focus {
+  border: 1px solid #FFDA00;
+}
+.main-box .select-first {
+  margin-right: 1%;
+}
+.main-box .user-logo {
+  width: 80%;
+}
+.main-box .main-holder {
+  padding: 2%;
+}
+.main-box .boxes-holder {
+  background-color: transparent;
+  margin-bottom: 5%;
+}
+.main-box .boxes-holder .single-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+  width: 190px;
+  margin-right: 2%;
+  margin-bottom: 4%;
+  box-shadow: 0px 0px 46px #0000000F;
+  -moz-box-shadow: 0px 0px 46px #0000000F;
+  -webkit-box-shadow: 0px 0px 46px #0000000F;
+  -o-box-shadow: 0px 0px 46px #0000000F;
+}
+.main-box .boxes-holder .single-box .up {
+  margin-bottom: 30%;
+}
+.main-box .boxes-holder .single-box .up-header-holder {
+  padding-top: 7%;
+}
+.main-box .boxes-holder .single-box .number {
+  margin-bottom: 6%;
+}
+.main-box .boxes-holder .single-box .small-num {
+  font-size: 0.7rem;
+}
+.main-box .boxes-holder .single-box .inside-num {
+  margin-top: 20% !important;
+}
+.main-box .boxes-holder .single-box .green {
+  color: #5FB960;
+}
+.main-box .table-holder {
+  padding: 4%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 46px #0000000F;
+  -moz-box-shadow: 0px 0px 46px #0000000F;
+  -webkit-box-shadow: 0px 0px 46px #0000000F;
+  -o-box-shadow: 0px 0px 46px #0000000F;
+  overflow-x: hidden;
+}
+.main-box .table-holder .table-heading {
+  margin-bottom: 2%;
+}
+.main-box .table-holder .table-flex-holder p {
+  font-size: 0.7rem;
+}
+.main-box .table-holder .table-flex-holder img {
+  width: 70%;
+}
+.main-box .table-holder .table-flex-holder .col-title {
+  color: #A3ABB7;
+  margin-bottom: 5%;
+}
+.main-box .table-holder .table-flex-holder .text {
+  padding-top: 13%;
+}
+.main-box .table-holder .table-flex-holder .table-item {
+  width: 120px;
+  margin-bottom: 7%;
+}
+.main-box .table-holder .table-flex-holder .table-item-first {
+  width: 210px;
+  margin-bottom: 7%;
+}
+.main-box .table-holder .table-flex-holder .others {
+  padding-top: 10%;
+}
+
+.d-link {
+  color: #A3ABB7;
+  text-decoration: none;
+  display: block;
+}
+.d-link:hover {
+  text-decoration: none;
+}
+
+.dash-item:hover {
+  cursor: pointer;
+}
+.dash-item:hover .d-icon {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(3767%) hue-rotate(357deg) brightness(101%) contrast(106%);
+}
+.dash-item:hover .d-link {
+  color: #000000 !important;
+}
+
+.d-icon-active {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(3767%) hue-rotate(357deg) brightness(101%) contrast(106%) !important;
+}
+
+.d-link-active {
+  color: black !important;
+}
+
+.pd-l {
+  padding-left: 2.5%;
+}
+
+.pd-t {
+  padding-top: 2%;
+}
+
+.pd-l-2 {
+  padding-left: 8% !important;
+}
+
+.pd-b {
+  padding-bottom: 2%;
+}
+
+.pdt {
+  padding-top: 1%;
+}
+
+.pdb {
+  padding-bottom: 0.3% !important;
+}
+
+.pdr {
+  padding-right: 2% !important;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,68 @@
+// media queries
+
+@media screen and (max-width: 769px) and (min-width: 768px) {
+    .row{
+        overflow-x: hidden !important;
+        background: #F5F6FA;
+        
+    }
+
+    .top-holder{
+        width: 120% !important;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .side-box{
+        display: none !important;
+    }
+
+    .hide-nav{
+        display: none !important;
+    }
+
+    #side-box-small{
+        z-index: 30;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        box-shadow: none !important;
+        transition:all 0.7s ease;
+
+        .side-logo{
+            margin-right: 20%;
+        }
+
+        .btn-holder{
+            margin-right: 3%;
+        }
+
+        button{
+            background: none;
+            border: none;
+            color: #FFDA00 !important; 
+            font-size: 1.3rem;
+        }
+    }
+
+    .logo-lg{
+        width: 50% !important;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) {
+    .top-nav{
+        button{
+            display: none !important;
+        }
+    }
+
+    #side-box-small{
+        display: none !important;
+    }
+}

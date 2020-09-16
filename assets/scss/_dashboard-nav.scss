@@ -1,0 +1,77 @@
+@use 'config' as c;
+
+//side nav styles
+
+
+.side-box,#side-box-small{
+    background: c.$side-bg;
+    border: c.$border;
+    opacity: 1;
+    @include c.bshadow(c.$bshadow-val);  
+    
+    a{
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+}
+
+.logo-lg{
+    width: 70%;
+    margin-bottom: 10% ;
+}
+
+
+// utilities
+@mixin utilities(){
+  
+    .d-link{
+      color: #A3ABB7;
+      text-decoration: none;
+      display: block;
+  
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  
+  
+    .dash-item:hover{
+        cursor: pointer;
+        .d-icon{
+          filter:brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(3767%) hue-rotate(357deg) brightness(101%) contrast(106%);
+        }
+  
+        .d-link{
+          color: #000000 !important;
+        }
+        
+    }
+  
+    .d-icon-active{
+      filter:brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(3767%) hue-rotate(357deg) brightness(101%) contrast(106%) !important;
+    }
+  
+    .d-link-active{
+        color: black !important;
+    }
+
+    .pd-l{
+        padding-left:2.5% ;
+    }
+
+    .pd-t{
+        padding-top:2%;
+    }
+
+    .pd-l-2{
+        padding-left:8% !important;
+    }
+
+    .pd-b{
+      padding-bottom:2%;
+    }
+
+}
+

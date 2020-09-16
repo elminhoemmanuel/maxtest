@@ -1,0 +1,26 @@
+// media queries
+
+@media screen and (max-width: 768px) {
+    .left{
+        display: none;
+    }
+
+    .right{
+        height: auto;
+    }
+
+    .main{
+        padding: 30% 6% 0 8%;
+    }
+
+    form{
+        width: 100% !important;
+    }
+
+    .footer-flex {
+        position: relative !important;
+        margin-top: 8%;
+        padding-left: 0!important;
+        flex-wrap: wrap;
+    }
+}
