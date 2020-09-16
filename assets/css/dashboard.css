@@ -28,6 +28,17 @@
   .top-holder {
     width: 120% !important;
   }
+
+  .single-box {
+    width: 100px !important;
+  }
+  .single-box .up-img {
+    width: 160% !important;
+  }
+
+  .boxes-holder {
+    flex-direction: row !important;
+  }
 }
 @media screen and (max-width: 769px) {
   .side-box {
@@ -63,6 +74,22 @@
 
   .logo-lg {
     width: 50% !important;
+  }
+
+  .main-holder {
+    padding: 6% !important;
+  }
+
+  .boxes-holder {
+    flex-direction: column !important;
+  }
+
+  .single-box {
+    width: 100% !important;
+    padding: 8% !important;
+  }
+  .single-box .up-header-holder {
+    padding-top: 4% !important;
   }
 }
 @media screen and (min-width: 769px) {
@@ -172,6 +199,9 @@ body {
 .main-box .boxes-holder {
   background-color: transparent;
   margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .main-box .boxes-holder .single-box {
   background-color: white;

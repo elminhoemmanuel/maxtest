@@ -121,6 +121,10 @@ body{
     .boxes-holder{
         background-color: transparent;
         margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
 
         .single-box{
             background-color: white;
